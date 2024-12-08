@@ -1,7 +1,29 @@
 import Link from "next/link";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
 
+const perks = [
+  {
+    name: "Instant Delivery",
+    icon: ArrowDownToLine,
+    description:
+      "Get your assets delivered to your email in seconds and download them right away.",
+  },
+  {
+    name: "Guaranteed quality",
+    icon: CheckCircle,
+    description:
+      "Every asset on our platform is verified by our team to ensure our highest quality standards. Not happy? We offer a 30-day refund guarantee.",
+  },
+
+  {
+    name: "For the Planet",
+    icon: Leaf,
+    description:
+      "We've plegded 1% of sales to the preservation and restoration of the natural environment.",
+  },
+];
 export default function Home() {
   return (
     <>
@@ -28,7 +50,11 @@ export default function Home() {
 
       <section className="border-t border-gray-200 bg-gray-50">
         <MaxWidthWrapper>
-          <div className="grid grid-col-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-col-3 lg:gap-y-0 "></div>
+          <div className="grid grid-col-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-col-3 lg:gap-y-0 ">
+            {perks.map((perk) => (
+              <div key={perk.name}></div>
+            ))}
+          </div>
         </MaxWidthWrapper>
       </section>
     </>
