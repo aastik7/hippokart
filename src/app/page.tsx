@@ -35,13 +35,13 @@ export default function Home() {
           </h1>
           <p className="mt-6 text-lg max-w-prose text-muted-foreground">
             Welcome to Hippokart. Every asset on our platform is verified by our
-            team to ensure our highest quality standar ds
+            team to ensure our highest quality standards
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Link href="./products" className={buttonVariants()}>
               Browse Trending
             </Link>
-            <Button variant="ghost">Our Quality Promised &rarr;</Button>
+            <Button variant="ghost">Our Quality Promised &#8594;;</Button>
           </div>
         </div>
 
@@ -57,8 +57,8 @@ export default function Home() {
                 className="text.center md:flex md:items=start md:text-left lg:block lg:text-center"
               >
                 <div className="md:flex-shrink-0 flex justify-center">
-                  <div className="h-16 w-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-900">
-                    {<perk.icon className="w-1/3 h-1/3" />}
+                  <div className="mt-20 h-16 w-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-900">
+                    <perk.icon className="w-1/3 h-1/3" />
                   </div>
                 </div>
 

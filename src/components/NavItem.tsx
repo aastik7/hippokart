@@ -4,6 +4,8 @@ import { PRODUCT_CATEGORIES } from "@/config";
 import { Button } from "./ui/button";
 import { ChevronDown, Divide } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
+import Image from "next/image";
 
 type Category = (typeof PRODUCT_CATEGORIES)[number];
 
@@ -48,7 +50,36 @@ const NavItem = ({ isAnyOpen, category, handleOpen, isOpen }: NavItemProps) => {
             aria-hidden="true"
           ></div>
           <div className="relative bg-white">
-            <div className="mx-auto max-w-7xl px-8  "></div>
+            <div className="mx-auto max-w-7xl px-8  ">
+              <div className="grid grid-col-4 gap-x-8 gap-y-10 py-16">
+                <div className="col-span-4 col-start-1 grid grid-cols-3 gap-x-8 ">
+                  {category.featured.map((item) => (
+                    <div
+                      key={item.name}
+                      className="group relative text-base sm:text-sm"
+                    >
+                      <div className="relative aspect-video overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
+                        <Image
+                          src={item.imageSrc}
+                          alt="product category image"
+                          fill
+                          className="object-cover object-center"
+                        />
+                      </div>
+                      <Link
+                        href={item.href}
+                        className="mt-6 block font-medium text-gray-600"
+                      >
+                        {item.name}
+                      </Link>
+                      <p className="mt-1" aria-hidden="true">
+                        Shop Now
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       ) : null}
