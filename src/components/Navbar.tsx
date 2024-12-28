@@ -56,7 +56,16 @@ const Navbar = () => {
                     ></span>
                   ) : null}
 
-                  {user ? null : <div className="flex lg:ml-6"></div>}
+                  {user ? null : (
+                    <div className="flex lg:ml-6">
+                      <span
+                        className="h-6 w-px bg-gray-200"
+                        aria-hidden="true"
+                      ></span>{" "}
+                    </div>
+                  )}
+
+                  <div className="ml-4 flow-root"></div>
                 </div>
               </div>
             </div>
