@@ -1,7 +1,13 @@
 "use client";
 
 import { ShoppingCartIcon } from "lucide-react";
-import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
 
 const Cart = () => {
   return (
@@ -16,7 +22,9 @@ const Cart = () => {
         </span>
       </SheetTrigger>
       <SheetContent className="flex w-full flex-col pr-0 sm:max-w-lg">
-        <SheetHeader className="space-y-2.5 pr-6"></SheetHeader>
+        <SheetHeader className="space-y-2.5 pr-6">
+          <SheetTitle>Cart (0)</SheetTitle>
+        </SheetHeader>
       </SheetContent>
     </Sheet>
   );

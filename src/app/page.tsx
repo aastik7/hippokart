@@ -41,7 +41,7 @@ export default function Home() {
             <Link href="./products" className={buttonVariants()}>
               Browse Trending
             </Link>
-            <Button variant="ghost">Our Quality Promised &#8594;;</Button>
+            <Button variant="ghost">Our Quality Promised &#8594;</Button>
           </div>
         </div>
 
