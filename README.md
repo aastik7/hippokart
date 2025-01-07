@@ -1,6 +1,7 @@
 # HippoKart - A Modern Fullstack E-Commerce Marketplace for Digital Products
 
-![HippoKart Banner](project-image-placeholder.png)
+![Uploading thumbnail.png…]()
+
 
 ## Overview
 HippoKart is a cutting-edge, full-stack e-commerce platform designed for buying and selling digital products. Built with modern technologies like Next.js 14, tRPC, TypeScript, Payload CMS, and Tailwind CSS, HippoKart provides a seamless, performant, and visually appealing marketplace experience.
