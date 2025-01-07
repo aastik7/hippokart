@@ -1,6 +1,7 @@
 # HippoKart - A Modern Fullstack E-Commerce Marketplace for Digital Products
 
-![Uploading thumbnail.png…]()
+![thumbnail](https://github.com/user-attachments/assets/ef149c30-d70b-4240-bdb6-20d78e7dae26)
+
 
 
 ## Overview
