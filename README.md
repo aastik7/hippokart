@@ -2,6 +2,7 @@
 
 ![thumbnail](https://github.com/user-attachments/assets/ef149c30-d70b-4240-bdb6-20d78e7dae26)
 
+[![Visit HippoKart](https://img.shields.io/badge/Visit-HippoKart-267fed?style=for-the-badge&logo=github&logoColor=white)](https://hippokart-production.up.railway.app)
 
 
 ## Overview
