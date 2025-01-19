@@ -1,11 +1,11 @@
-import { User } from "../payload-types";
-import { ReadonlyRequestCookies } from "next/dist/server/web/spec-extension/adapters/request-cookies";
-import { NextRequest } from "next/server";
+import { User } from '../payload-types'
+import { ReadonlyRequestCookies } from 'next/dist/server/web/spec-extension/adapters/request-cookies'
+import { NextRequest } from 'next/server'
 
 export const getServerSideUser = async (
-  cookies: NextRequest["cookies"] | ReadonlyRequestCookies
+  cookies: NextRequest['cookies'] | ReadonlyRequestCookies
 ) => {
-  const token = cookies.get("payload-token")?.value;
+  const token = cookies.get('payload-token')?.value
 
   const meRes = await fetch(
     `${process.env.NEXT_PUBLIC_SERVER_URL}/api/users/me`,
@@ -14,13 +14,11 @@ export const getServerSideUser = async (
         Authorization: `JWT ${token}`,
       },
     }
-  );
-
-  console.log("NEXT_PUBLIC_SERVER_URL:", process.env.NEXT_PUBLIC_SERVER_URL);
+  )
 
   const { user } = (await meRes.json()) as {
-    user: User | null;
-  };
+    user: User | null
+  }
 
-  return { user };
-};
+  return { user }
+}
