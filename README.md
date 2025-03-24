@@ -4,6 +4,9 @@
 
 [![Visit HippoKart](https://img.shields.io/badge/Visit-HippoKart-267fed?style=for-the-badge&logo=github&logoColor=white)](https://hippokart-production.up.railway.app)
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-%230080FF.svg?style=for-the-badge&logo=google-chrome&logoColor=white)](https://purchasekorea.com/)
+
+
 
 ## Overview
 HippoKart is a cutting-edge, full-stack e-commerce platform designed for buying and selling digital products. Built with modern technologies like Next.js 14, tRPC, TypeScript, Payload CMS, and Tailwind CSS, HippoKart provides a seamless, performant, and visually appealing marketplace experience.
